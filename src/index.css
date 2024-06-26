@@ -17,3 +17,14 @@ nav ul li a {
     height: 2rem;
     width: 2rem; 
 }
+
+.order li{
+    background-color: #EE4E4E;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: small;
+    color: white;
+    gap: 10px;
+    font-weight:bolder;
+}
