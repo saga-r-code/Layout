@@ -4,7 +4,7 @@ import Restaurant from './Components/Restaurant';
 
 function App() {
   return (
-   <div className='flex '>
+   <div className='md:flex '>
    <Navbar />
     <Restaurant />
    </div>

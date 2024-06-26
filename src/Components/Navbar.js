@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { FaHotel } from "react-icons/fa";
 import { IoHomeOutline } from "react-icons/io5";
 import { RiBillLine } from "react-icons/ri";
@@ -8,23 +8,35 @@ import { FaConciergeBell } from 'react-icons/fa';
 import { FaCashRegister } from 'react-icons/fa';
 import { IoSettingsOutline } from "react-icons/io5";
 import { IoExitOutline } from "react-icons/io5";
+import { MdOutlineMenu } from "react-icons/md";
+import { IoMdClose } from "react-icons/io";
+
 
 const Navbar = () => {
+  const [showNavbar, setShowNavbar] = useState(false);
+
+  const toggleNavbar = () => {
+    setShowNavbar(!showNavbar)
+  };
+
   return (
     <div>
-      <nav>
-        <ul className="flex flex-col items-center gap-6 xl:gap-10 px-4 py-5 bg-black max-w-16 h-screen rounded-e-md">
-          <li><a href="/"><FaHotel  className="text-[#E54949] h-6 w-6  lg:h-7 hover:text-white"/></a></li>
-          <li><a href="/"><IoHomeOutline  className="text-[#E54949] h-6 w-6  lg:h-7 hover:text-white" /></a></li>
-          <li><a href="/"><RiBillLine  className="text-[#E54949] h-6 w-6  lg:h-7 hover:text-white" /></a></li>
-          <li><a href="/"><VscPieChart  className="text-[#E54949] h-6 w-6  lg:h-7 hover:text-white" /></a></li>
-          <li><a href="/"><GiChefToque  className="text-[#E54949] h-6 w-6  lg:h-7 hover:text-white" /></a></li>
-          <li><a href="/"><FaConciergeBell  className="text-[#E54949] h-6 w-6  lg:h-7  hover:text-white" /></a></li>
-          <li><a href="/"><FaCashRegister  className="text-[#E54949] h-6 w-6  lg:h-7  hover:text-white" /></a></li>
-          <li><a href="/"><IoSettingsOutline  className="text-[#E54949] h-6 w-6  lg:h-7  hover:text-white" /></a></li>
-          <li><a href="/"><IoExitOutline  className="text-[#E54949] h-6 w-6  lg:h-7  hover:text-white" /></a></li>
+      <div ><MdOutlineMenu onClick={toggleNavbar} className="text-[#E54949] h-7 w-7 m-2"/></div>
+      <nav className={`fixed left-0 top-0 h-screen md:flex md:flex-col items-center gap-6 xl:gap-10 px-4 py-5 bg-black rounded-e-md ${showNavbar ? 'block' : 'hidden '}`}>
+        <ul className="flex flex-col items-center gap-6 xl:gap-10">
+          <li className="md:hidden"><IoMdClose className="text-[#E54949] h-6 w-6 lg:h-7" onClick={toggleNavbar}/></li>
+          <li><a><FaHotel className="text-[#E54949] h-6 w-6 lg:h-7 hover:text-white"/></a></li>
+          <li><a><IoHomeOutline className="text-[#E54949] h-6 w-6 lg:h-7 hover:text-white" /></a></li>
+          <li><a><RiBillLine className="text-[#E54949] h-6 w-6 lg:h-7 hover:text-white" /></a></li>
+          <li><a><VscPieChart className="text-[#E54949] h-6 w-6 lg:h-7 hover:text-white" /></a></li>
+          <li><a><GiChefToque className="text-[#E54949] h-6 w-6 lg:h-7 hover:text-white" /></a></li>
+          <li><a><FaConciergeBell className="text-[#E54949] h-6 w-6 lg:h-7 hover:text-white" /></a></li>
+          <li><a><FaCashRegister className="text-[#E54949] h-6 w-6 lg:h-7 hover:text-white" /></a></li>
+          <li><a><IoSettingsOutline className="text-[#E54949] h-6 w-6 lg:h-7 hover:text-white" /></a></li>
+          <li><a><IoExitOutline className="text-[#E54949] h-6 w-6 lg:h-7 hover:text-white" /></a></li>
         </ul>
       </nav>
+      
     </div>
   );
 };
