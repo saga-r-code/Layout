@@ -1,9 +1,10 @@
 import { useState } from 'react';
 import './App.css';
-import MenuDine from './Components/MenuDine';
+// import MenuDine from './Components/MenuDine';
 // import BankOffice from './Components/BankOffice';
 // import Dashboard from './Components/Dashboard';
 import Navbar from './Components/Navbar';
+import EatofySetting from './Components/EatofySetting';
 // import Restaurant from './Components/Restaurant';
 
 
@@ -14,19 +15,21 @@ function App() {
     setShowNavbar(!showNavbar);
   };
 
-  const [menuShown, setmenuShown] = useState(false);
+  //For MenuDine Components
+  // const [menuShown, setmenuShown] = useState(false);
 
-  const togglemMenu = () => {
-    setmenuShown(!menuShown);
-  };
+  // const togglemMenu = () => {
+  //   setmenuShown(!menuShown);
+  // };
 
   return (
     <div className="md:flex">
       <Navbar showNavbar={showNavbar} toggleNavbar={toggleNavbar} />
-      <MenuDine menuShown={menuShown} togglemMenu={togglemMenu}/>
+      {/* <MenuDine menuShown={menuShown} togglemMenu={togglemMenu}/> */}
        {/* <Restaurant /> */}
     {/* <Dashboard /> */}
     {/* <BankOffice /> */}
+    <EatofySetting />
     </div>
   );
 }

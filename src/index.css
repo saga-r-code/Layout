@@ -33,6 +33,7 @@ nav ul li a {
     background-color: #EE4E4E;
 }
 
+/* Menu Dine */
 @media (min-width: 1440px)  {
     .menu li:hover{
         color:rgb(212, 0, 255);
@@ -46,6 +47,52 @@ nav ul li a {
 .menu li:hover{
     color:rgb(212, 0, 255);
     cursor: pointer;
+}
+
+
+/* Eatofy Setting */
+.setting-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px 15px;
+   font-size: smaller;
+    border-radius:20px;
+    font-weight:600;
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+    
+}
+
+.setting-list:hover{
+    background-color: #F48484;
+}
+
+.setting-list:hover .setting-name{
+    color: white;
+}
+
+.setting-ico{
+    display: none;
+
+}
+
+.setting-list:hover .setting-ico {
+    color: #ab2121;
+    display: block;
+}
+
+.setting-ico {
+    margin-left: 0.5rem; /* Tailwind's ml-2 equivalent */
+    color: #4B5563; /* Tailwind's text-gray-500 equivalent */
+}
+
+@media (min-width: 768px) {
+    .setting-list{
+        font-size: medium;
+    }
 }
 
 
