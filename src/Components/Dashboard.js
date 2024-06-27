@@ -1,6 +1,7 @@
 import React from 'react'
 import { IoIosNotificationsOutline } from "react-icons/io";
 import { CgProfile } from "react-icons/cg";
+import chart from '../Assets/chart.webp'
 
 
 
@@ -19,7 +20,7 @@ const Dashboard = () => {
       </div>
 
       <div className="mb-12 mt-5 flex gap-10 flex-wrap  justify-center items-center">
-        <div className=" flex flex-col w-full sm:w-[45%] lg:w-[18em] xl:w-[20em] border border-red-500 rounded-xl bg-white text-gray-700 shadow-red-500/50">
+        <div className=" flex flex-col w-full sm:w-[45%] lg:w-[18em] xl:w-[20em] border border-red-500 rounded-xl bg-white text-gray-700 shadow-red-500/50 md:transform md:transition md:duration-500 md:hover:scale-110">
           <div className=" bg-clip-border mx-4 rounded-xl overflow-hidden bg-gradient-to-tr from-red-600 to-red-400 text-white shadow-red-500/40 shadow-lg  -mt-4 grid h-16 w-16 place-items-center">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" className="w-6 h-6 text-white">
               <path d="M12 7.5a2.25 2.25 0 100 4.5 2.25 2.25 0 000-4.5z"></path>
@@ -39,7 +40,7 @@ const Dashboard = () => {
         </div>
         
         
-        <div className=" flex flex-col w-full sm:w-[45%] lg:w-[18em] xl:w-[20em] border border-green-500 rounded-xl bg-white text-gray-700 shadow-green-400/65">
+        <div className=" flex flex-col w-full sm:w-[45%] lg:w-[18em] xl:w-[20em] border border-green-500 rounded-xl bg-white text-gray-700 shadow-green-400/65 md:transform md:transition md:duration-500 md:hover:scale-110">
           <div className="bg-clip-border mx-4 rounded-xl overflow-hidden bg-gradient-to-tr from-orange-600 to-orange-400 text-white shadow-orange-500/40 shadow-lg  -mt-4 grid h-16 w-16 place-items-center">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" className="w-6 h-6 text-white">
               <path d="M18.375 2.25c-1.035 0-1.875.84-1.875 1.875v15.75c0 1.035.84 1.875 1.875 1.875h.75c1.035 0 1.875-.84 1.875-1.875V4.125c0-1.036-.84-1.875-1.875-1.875h-.75zM9.75 8.625c0-1.036.84-1.875 1.875-1.875h.75c1.036 0 1.875.84 1.875 1.875v11.25c0 1.035-.84 1.875-1.875 1.875h-.75a1.875 1.875 0 01-1.875-1.875V8.625zM3 13.125c0-1.036.84-1.875 1.875-1.875h.75c1.036 0 1.875.84 1.875 1.875v6.75c0 1.035-.84 1.875-1.875 1.875h-.75A1.875 1.875 0 013 19.875v-6.75z"></path>
@@ -56,7 +57,7 @@ const Dashboard = () => {
           </div>
         </div>
 
-        <div className=" flex flex-col w-full sm:w-[45%] lg:w-[18em] xl:w-[20em] border border-green-500 rounded-xl bg-white text-gray-700 shadow-green-600/40">
+        <div className=" flex flex-col w-full sm:w-[45%] lg:w-[18em] xl:w-[20em] border border-green-500 rounded-xl bg-white text-gray-700 shadow-green-600/40 md:transform md:transition md:duration-500 md:hover:scale-110 ">
           <div className="bg-clip-border mx-4 rounded-xl overflow-hidden bg-gradient-to-tr from-green-600 to-green-400 text-white shadow-green-500/40 shadow-lg  -mt-4 grid h-16 w-16 place-items-center">
          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-10 h-10 text-white">
                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v12m-3-2.818l.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -74,6 +75,10 @@ const Dashboard = () => {
         </div>
 
       </div>
+
+    <div className="bar">
+        <img src={chart} alt="chart" />
+    </div>
       
     </div>
   )
