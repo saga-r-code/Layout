@@ -4,7 +4,8 @@ import './App.css';
 // import BankOffice from './Components/BankOffice';
 // import Dashboard from './Components/Dashboard';
 import Navbar from './Components/Navbar';
-import EatofySetting from './Components/EatofySetting';
+// import KOTList from './Components/KOTList';
+// import EatofySetting from './Components/EatofySetting';
 // import Restaurant from './Components/Restaurant';
 
 
@@ -23,13 +24,14 @@ function App() {
   // };
 
   return (
-    <div className="md:flex">
+    <div className="md:flex ">
       <Navbar showNavbar={showNavbar} toggleNavbar={toggleNavbar} />
       {/* <MenuDine menuShown={menuShown} togglemMenu={togglemMenu}/> */}
        {/* <Restaurant /> */}
     {/* <Dashboard /> */}
     {/* <BankOffice /> */}
-    <EatofySetting />
+    {/* <EatofySetting /> */}
+    {/* <KOTList /> */}
     </div>
   );
 }

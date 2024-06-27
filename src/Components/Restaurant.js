@@ -8,7 +8,7 @@ import Zomoto from '../Assets/Zomato.png'
 const Restaurant = () => {
 
   return (
-    <div className="p-5 w-full h-screen md:px-20 pt-1 md:py-5 overflow-auto">
+    <div className="p-5 w-full h-screen md:px-20 pt-1 md:py-5 overflow-auto 2xl:w-[95%] 2xl:m-auto">
       <div className='heading'>
       <h4 className="text-red-700 text-sm xl:text-lg font-semibold mx-12 mb-5 md:mx-0 ">EATOFY</h4>
       <div className='flex justify-center items-center gap-2 mt-2 lg:mt-2'>
