@@ -96,6 +96,13 @@ nav ul li a {
 }
 
 
+/* KitchenChef */
+.list li{
+    padding:8px 12px;
+    border: 1px solid #16a34a;
+    border-radius: 8px;
+}
+
 
 
 

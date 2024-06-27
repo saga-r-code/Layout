@@ -4,6 +4,7 @@ import './App.css';
 // import BankOffice from './Components/BankOffice';
 // import Dashboard from './Components/Dashboard';
 import Navbar from './Components/Navbar';
+import KitchenChef from './Components/KitchenChef';
 // import KOTList from './Components/KOTList';
 // import EatofySetting from './Components/EatofySetting';
 // import Restaurant from './Components/Restaurant';
@@ -32,6 +33,7 @@ function App() {
     {/* <BankOffice /> */}
     {/* <EatofySetting /> */}
     {/* <KOTList /> */}
+    <KitchenChef />
     </div>
   );
 }
