@@ -1,5 +1,6 @@
 import React from 'react';
 import { IoSearchOutline } from "react-icons/io5";
+import dishe from '../Assets/dishes.jpg'
 
 const Menu = ({menuShown, togglemMenu}) => {
   return (
@@ -16,26 +17,37 @@ const Menu = ({menuShown, togglemMenu}) => {
       </div>
 
       <div className="dishes sm:hidden text-center font-bold mt-5 mx-5 p-2 sm:p-3 bg-gradient-to-r from-red-400 via-red-600 to-red-700 rounded-full" onClick={togglemMenu}>Dishes</div>
-      <ul className={`menu flex flex-col justify-center sm:flex-row sm:flex gap-8 font-semibold items-center mt-10 text-sm text-center  xl:justify-normal ${menuShown ? 'block' : 'hidden '}`}>
+      <ul className={`menu flex flex-col justify-center items-center sm:flex-row sm:flex gap-8 font-semibold  mt-10 text-sm text-center  lg:justify-normal ${menuShown ? 'block' : 'hidden '}`}>
         <li>NonVeg</li>
         <li>Veg</li>
         <li>Breakfast</li>
         <li>Hot Dishes</li>
         <li>Rice</li>
-        <li>South Indian</li>
-        <li>Cold Dishes</li>
+        <li className='md:hidden lg:block'>South Indian</li>
+        <li className='md:hidden lg:block'>Cold Dishes</li>
         <li>Grill</li>
         <li>Soup</li>
         <li>Grill</li>
-        <li>Appetizer</li>
+        <li className='md:hidden xl:block'>Appetizer</li>
         <li>Dessert</li>
       </ul>
       <div className='w-full h-0.5 bg-black mt-3 hidden md:block'></div>
 
-      <div className="dishes mt-10 list-none grid grid-cols-2 gap-3">
+      {/* dropdown */}
+      <div className='dropdown'>
+      <div className="flex justify-end items-center pt-5">
+        <select name="cars" id="cars" className="outline-none border border-gray-300 rounded-md px-2 py-1 text-gray-700 bg-gray-50 focus:ring-2 focus:ring-blue-500 transition ease-in-out duration-300 font-semibold">
+          <option value="Dine In" className="p-3">Dine In</option>
+          <option value="Take Away" className="p-3">Take Away</option>
+        </select>
+      </div>
+    </div>
+
+
+      <div className="dishes mt-10 list-none grid gap-y-5 gap-x-3 grid-cols-2 md:grid-cols-3 md:gap-y-7 md:gap-x-5 lg:grid-cols-4 xl:grid-cols-6 xl:gap-x-10 xl:gap-y-20"> 
 
       <div className="dish-1 border-2 border-red-600 pb-10 p-4 md:p-3 rounded-md shadow-lg flex flex-col gap-3 justify-center items-center text-xs md:transition md:duration-500 md:hover:scale-110 ">
-            <p className='w-14 h-14 bg-gray-500 rounded-full'></p>
+            <p className='w-24 h-24 rounded-full overflow-hidden '><img src={dishe} alt='dishe'/></p>
             <div className='food-details flex flex-col mt-2'>
             <span>Spicy Seasoned</span>
             <span>seafood noodles</span>
@@ -43,17 +55,70 @@ const Menu = ({menuShown, togglemMenu}) => {
         </div>
 
         <div className="dish-2  border-2 border-green-600 pb-10 p-4 md:p-3 rounded-md shadow-lg flex flex-col gap-3 justify-center items-center text-xs md:transition md:duration-500 md:hover:scale-110 ">
-            <p className='w-14 h-14 bg-gray-500 rounded-full'></p>
+            <p className='w-24 h-24 rounded-full overflow-hidden '><img src={dishe} alt="dishe"  /></p>
             <div className='food-details flex flex-col mt-2'>
             <span>Spicy Seasoned</span>
             <span>seafood noodles</span>
             </div>
           </div>
+
+          <div className="dish-2  border-2 border-green-600 pb-10 p-4 md:p-3 rounded-md shadow-lg flex flex-col gap-3 justify-center items-center text-xs md:transition md:duration-500 md:hover:scale-110 ">
+            <p className='w-24 h-24 rounded-full overflow-hidden '><img src={dishe} alt="dishe"  /></p>
+            <div className='food-details flex flex-col mt-2'>
+            <span>Spicy Seasoned</span>
+            <span>seafood noodles</span>
+            </div>
+          </div>
+
+          <div className="dish-1 border-2 border-red-600 pb-10 p-4 md:p-3 rounded-md shadow-lg flex flex-col gap-3 justify-center items-center text-xs md:transition md:duration-500 md:hover:scale-110 ">
+            <p className='w-24 h-24 rounded-full overflow-hidden '><img src={dishe} alt='dishe'/></p>
+            <div className='food-details flex flex-col mt-2'>
+            <span>Spicy Seasoned</span>
+            <span>seafood noodles</span>
+            </div>
+        </div>
+
+        <div className="dish-1 border-2 border-red-600 pb-10 p-4 md:p-3 rounded-md shadow-lg flex flex-col gap-3 justify-center items-center text-xs md:transition md:duration-500 md:hover:scale-110 ">
+            <p className='w-24 h-24 rounded-full overflow-hidden '><img src={dishe} alt='dishe'/></p>
+            <div className='food-details flex flex-col mt-2'>
+            <span>Spicy Seasoned</span>
+            <span>seafood noodles</span>
+            </div>
+        </div>
+
+        <div className="dish-2  border-2 border-green-600 pb-10 p-4 md:p-3 rounded-md shadow-lg flex flex-col gap-3 justify-center items-center text-xs md:transition md:duration-500 md:hover:scale-110 ">
+            <p className='w-24 h-24 rounded-full overflow-hidden '><img src={dishe} alt="dishe"  /></p>
+            <div className='food-details flex flex-col mt-2'>
+            <span>Spicy Seasoned</span>
+            <span>seafood noodles</span>
+            </div>
+          </div>
+
+          <div className="dish-2  border-2 border-green-600 pb-10 p-4 md:p-3 rounded-md shadow-lg flex flex-col gap-3 justify-center items-center text-xs md:transition md:duration-500 md:hover:scale-110 ">
+            <p className='w-24 h-24 rounded-full overflow-hidden '><img src={dishe} alt="dishe"  /></p>
+            <div className='food-details flex flex-col mt-2'>
+            <span>Spicy Seasoned</span>
+            <span>seafood noodles</span>
+            </div>
+          </div>
+
+          <div className="dish-2  border-2 border-green-600 pb-10 p-4 md:p-3 rounded-md shadow-lg flex flex-col gap-3 justify-center items-center text-xs md:transition md:duration-500 md:hover:scale-110 ">
+            <p className='w-24 h-24 rounded-full overflow-hidden '><img src={dishe} alt="dishe"  /></p>
+            <div className='food-details flex flex-col mt-2'>
+            <span>Spicy Seasoned</span>
+            <span>seafood noodles</span>
+            </div>
+          </div>
+
+         
+
       </div>
+      {/* dishes class close */}
 
 
      
     </div>
+   
 
   );
 }
