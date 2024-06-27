@@ -21,10 +21,10 @@ const Navbar = () => {
 
   return (
     <div>
-      <div ><MdOutlineMenu onClick={toggleNavbar} className="text-[#E54949] h-7 w-7 m-2"/></div>
+      <div ><MdOutlineMenu onClick={toggleNavbar} className="text-[#E54949]  h-7 w-6 m-2 md:hidden"/></div>
       <nav className={`fixed left-0 top-0 h-screen md:flex md:flex-col items-center gap-6 xl:gap-10 px-4 py-5 bg-black rounded-e-md ${showNavbar ? 'block' : 'hidden '}`}>
         <ul className="flex flex-col items-center gap-6 xl:gap-10">
-          <li className="md:hidden"><IoMdClose className="text-[#E54949] h-6 w-6 lg:h-7" onClick={toggleNavbar}/></li>
+          <li className="close md:hidden"><IoMdClose className="text-[#E54949] hover:text-white h-6 w-6  " onClick={toggleNavbar}/></li>
           <li><a><FaHotel className="text-[#E54949] h-6 w-6 lg:h-7 hover:text-white"/></a></li>
           <li><a><IoHomeOutline className="text-[#E54949] h-6 w-6 lg:h-7 hover:text-white" /></a></li>
           <li><a><RiBillLine className="text-[#E54949] h-6 w-6 lg:h-7 hover:text-white" /></a></li>
@@ -36,7 +36,6 @@ const Navbar = () => {
           <li><a><IoExitOutline className="text-[#E54949] h-6 w-6 lg:h-7 hover:text-white" /></a></li>
         </ul>
       </nav>
-      
     </div>
   );
 };
