@@ -7,9 +7,9 @@ import chart from '../Assets/chart.webp'
 
 const Dashboard = () => {
   return (
-    <div className="p-5 w-full h-screen md:px-20 py-2 md:py-5 overflow-auto">
+    <div className="p-5 w-full h-screen md:px-20 pt-1 md:py-5 overflow-auto">
       <div className='heading flex justify-between items-center'>
-      <h4 className="text-red-700 text-sm xl:text-lg font-semibold mx-10 mb-5 md:mx-0 ">EATOFY</h4>
+      <h4 className="text-red-700 text-sm xl:text-lg font-semibold mx-12 mb-5 md:mx-0 ">EATOFY</h4>
       <div>
         <ul className=' relative flex justify-center gap-3'>
         <span className="absolute -top-1 left-2 rounded-full bg-red-500 h-4 w-4 text-xs text-center text-red-50">4</span>

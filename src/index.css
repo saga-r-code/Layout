@@ -33,3 +33,19 @@ nav ul li a {
     background-color: #EE4E4E;
 }
 
+@media (min-width: 1440px)  {
+    .menu li:hover{
+        color:rgb(212, 0, 255);
+        cursor: pointer;
+        text-decoration: underline;
+        text-underline-offset: 15px;
+        text-decoration-thickness: 3px;
+    }
+}
+
+.menu li:hover{
+    color:rgb(212, 0, 255);
+    cursor: pointer;
+}
+
+

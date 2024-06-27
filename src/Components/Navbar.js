@@ -12,13 +12,7 @@ import { MdOutlineMenu } from "react-icons/md";
 import { IoMdClose } from "react-icons/io";
 
 
-const Navbar = () => {
-  const [showNavbar, setShowNavbar] = useState(false);
-
-  const toggleNavbar = () => {
-    setShowNavbar(!showNavbar)
-  };
-
+const Navbar = ({showNavbar, toggleNavbar}) => {
   return (
     <div>
       <div ><MdOutlineMenu onClick={toggleNavbar} className="text-[#E54949]  h-7 w-6 m-2 md:hidden"/></div>

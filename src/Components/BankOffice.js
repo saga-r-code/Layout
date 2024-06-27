@@ -4,9 +4,9 @@ import { IoSettingsOutline } from "react-icons/io5";
 
 const BankOffice = () => {
   return (
-    <div className="p-5 w-full h-screen md:px-20 py-2 md:py-5 overflow-auto">
+    <div className="p-5 w-full h-screen md:px-20 pt-1 md:py-5 overflow-auto">
       <div className="heading flex justify-between items-center">
-        <h4 className="text-red-700 text-sm xl:text-lg font-semibold mx-10 mb-5 md:mx-0 ">
+        <h4 className="text-red-700 text-sm xl:text-lg font-semibold mx-12 mb-5 md:mx-0 ">
           EATOFY
         </h4>
       </div>
