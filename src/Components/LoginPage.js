@@ -81,7 +81,7 @@ const LoginPage = () => {
           </div>
 
           <div className='my-5'>
-            <hr /><p className='text-slate-400 text-center text-sm'>Or continue with</p>
+            <hr /><p className='text-slate-400 text-center text-sm'>or continue with</p>
           </div>
         </form>                
       </div>
