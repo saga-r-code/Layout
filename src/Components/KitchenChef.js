@@ -2,6 +2,7 @@ import React from 'react'
 import { IoSearchOutline } from "react-icons/io5";
 import { IoMdCheckmark } from "react-icons/io";
 import dishe from '../Assets/dishes.jpg'
+import { ImCheckboxChecked } from "react-icons/im";
 
 
 const KitchenChef = () => {
@@ -18,8 +19,8 @@ const KitchenChef = () => {
       </div>
     </div>
 
-    <div className='order-lis overflow-auto overflow-x-scrollt p-3'>
-        <h3 className='fixed lg:static left-[35%] md:left-28 font-medium'>Order List</h3>
+    <div className='order-list overflow-auto overflow-x-scrollt p-3'>
+        <h3 className='font-medium'>Order List</h3>
         <ul className="list text-green-700 flex gap-5 mt-10 lg:mt-5">
             <li className=''><IoMdCheckmark className='inline-block' />#345</li>
             <li className=''><IoMdCheckmark className='inline-block '/>#346</li>
@@ -34,38 +35,148 @@ const KitchenChef = () => {
         </ul>
     </div>
 
-    <div className="orders-details">
-        <div className="order-1 border border-red-800">
-            <div className='order flex flex-col justify-start items-center gap-1'>
+    {/* <div className="orders-details mt-5 grid grid-cols-1 gap-y-4 sm:grid-cols-2 lg:grid-cols-3  sm:gap-x-4 2xl:w-[90%] 2xl:m-auto"> */}
+    <div className="orders-details flex justify-center flex-wrap gap-6 md:justify-start items-center mt-5   2xl:w-[90%] 2xl:m-auto">
+        <div className="order-1 border border-red-800 p-5 ">
+            <div className='order flex flex-col justify-center items-start gap-1 leading-tight'>
             <p>Order #351</p>
-            <p className='text-slate-500 text-sm'>05 Feb 2023, 08:28 PM</p>
+            <p className='text-slate-500 text-xs '>05 Feb 2023, 08:28 PM</p>
+            </div>
+            
+           <div className=' dishes flex justify-center items-start flex-col'>
+
+           <div className="dish-1 mt-8 flex gap-5 justify-center items-center">
+            <p className='w-16 h-16 rounded-full overflow-hidden '><img src={dishe} alt="dishe"  /></p>
+            <div className='text-xs'>
+              <p className='font-semibold'>Vegetable Mixups</p>
+              <p className='text-slate-500'>Vegetable Fritters with Egg</p>
+              <div className='flex justify-between my-2 font-medium '>
+                <p>Rs155</p>
+                <p className='font-semibold'>Qty: 1</p>
+              </div>
+              <div className='w-full m-auto bg-slate-300 h-[1px] mt-4'></div>
+            </div>
             </div>
 
-            <div className='dishes flex flex-col gap-3 w-[30%]'>
-            <li className=' rounded-full overflow-hidden '><img src={dishe} alt='dishe' className='w-10 h-10 rounded-full'/>
-            <div className='dish-name flex flex-col'>
-                <p>Vegetable Mixups</p>
-                <p className='text-xs'>Vegetable Fritters With Egg</p>
-            </div>
-            <div className='dish-price flex justify-between items-center'>
+            <div className="dish-2 my-5 flex gap-5 justify-center items-center">
+            <p className='w-16 h-16 rounded-full overflow-hidden '><img src={dishe} alt="dishe"  /></p>
+            <div className='text-xs '>
+              <p className='font-semibold'>Vegetable Mixups</p>
+              <p className='text-slate-500'>Vegetable Fritters with Egg</p>
+              <div className='flex justify-between my-2 font-medium '>
                 <p>Rs155</p>
-                <p>Qty: 1</p>
+                <p className='font-semibold'>Qty: 1</p>
+              </div>
             </div>
-            </li>
-            <hr />
-            <li className='rounded-full overflow-hidden '><img src={dishe} alt='dishe' className='w-10 h-10 rounded-full '/>
-            <div className='dish-name flex flex-col'>
-                <p>Vegetable Mixups</p>
-                <p className='text-xs'>Vegetable Fritters With Egg</p>
             </div>
-            <div className='dish-price flex justify-between items-center'>
-                <p>Rs155</p>
-                <p>Qty: 1</p>
-            </div>
-            </li>
-            <hr />
-            </div>
+           </div> 
+           {/* dishes class */}
+           <hr />
+
+           <div className='flex justify-between items-center items-s p-3'>
+            <p className='text-sm text-slate-500'>X2 Item</p>
+                <div className='bg-green-400 border-2 border-green-400 rounded-md inline-flex items-center p-1'>
+                <ImCheckboxChecked size={20} color='white' />
+            <span className='text-white ml-2 text-sm font-semibold'>Completed</span>
+                 </div>
+           </div>
+           
+            
         </div>
+        {/* order-1 class */}
+        
+
+        <div className="order-2 border border-red-800 p-5">
+            <div className='order flex flex-col justify-center items-start gap-1 leading-tight'>
+            <p>Order #351</p>
+            <p className='text-slate-500 text-xs '>05 Feb 2023, 08:28 PM</p>
+            </div>
+            
+           <div className=' dishes flex justify-center items-start flex-col'>
+
+           <div className="dish-1 mt-8 flex gap-5 justify-center items-center">
+            <p className='w-16 h-16 rounded-full overflow-hidden '><img src={dishe} alt="dishe"  /></p>
+            <div className='text-xs'>
+              <p className='font-semibold'>Vegetable Mixups</p>
+              <p className='text-slate-500'>Vegetable Fritters with Egg</p>
+              <div className='flex justify-between my-2 font-medium '>
+                <p>Rs155</p>
+                <p className='font-semibold'>Qty: 1</p>
+              </div>
+              <div className='w-full m-auto bg-slate-300 h-[1px] mt-4'></div>
+            </div>
+            </div>
+
+            <div className="dish-2 my-5 flex gap-5 justify-center items-center">
+            <p className='w-16 h-16 rounded-full overflow-hidden '><img src={dishe} alt="dishe"  /></p>
+            <div className='text-xs '>
+              <p className='font-semibold'>Vegetable Mixups</p>
+              <p className='text-slate-500'>Vegetable Fritters with Egg</p>
+              <div className='flex justify-between my-2 font-medium '>
+                <p>Rs155</p>
+                <p className='font-semibold'>Qty: 1</p>
+              </div>
+            </div>
+            </div>
+           </div> 
+           {/* dishes class */}
+           <hr />
+
+           <div className='flex justify-between items-center p-3'>
+            <p className='text-sm text-slate-500'>X2 Item</p>
+            <p className='bg-green-400 border-2 border-green-400 rounded-md'><ImCheckboxChecked  size={25}  color='white' /></p>
+           </div>
+           
+            
+        </div>
+        {/* order-2 class */}
+
+        <div className="order-3 border border-red-800 p-5 ">
+            <div className='order flex flex-col justify-center items-start gap-1 leading-tight'>
+            <p>Order #351</p>
+            <p className='text-slate-500 text-xs '>05 Feb 2023, 08:28 PM</p>
+            </div>
+            
+           <div className=' dishes flex justify-center items-start flex-col'>
+
+           <div className="dish-1 mt-8 flex gap-5 justify-center items-center">
+            <p className='w-16 h-16 rounded-full overflow-hidden '><img src={dishe} alt="dishe"  /></p>
+            <div className='text-xs'>
+              <p className='font-semibold'>Vegetable Mixups</p>
+              <p className='text-slate-500'>Vegetable Fritters with Egg</p>
+              <div className='flex justify-between my-2 font-medium '>
+                <p>Rs155</p>
+                <p className='font-semibold'>Qty: 1</p>
+              </div>
+              <div className='w-full m-auto bg-slate-300 h-[1px] mt-4'></div>
+            </div>
+            </div>
+
+            <div className="dish-2 my-5 flex gap-5 justify-center items-center">
+            <p className='w-16 h-16 rounded-full overflow-hidden '><img src={dishe} alt="dishe"  /></p>
+            <div className='text-xs '>
+              <p className='font-semibold'>Vegetable Mixups</p>
+              <p className='text-slate-500'>Vegetable Fritters with Egg</p>
+              <div className='flex justify-between my-2 font-medium '>
+                <p>Rs155</p>
+                <p className='font-semibold'>Qty: 1</p>
+              </div>
+            </div>
+            </div>
+           </div> 
+           {/* dishes class */}
+           <hr />
+
+           <div className='flex justify-between items-center p-3'>
+            <p className='text-sm text-slate-500'>X2 Item</p>
+            <p className='bg-green-400 border-2 border-green-400 rounded-md'><ImCheckboxChecked  size={25}  color='white' /></p>
+           </div>
+           
+           
+            
+        </div>
+        {/* order-3 class */}
+
     </div>
       
     </div>
