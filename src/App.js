@@ -3,11 +3,12 @@ import './App.css';
 // import MenuDine from './Components/MenuDine';
 // import BankOffice from './Components/BankOffice';
 // import Dashboard from './Components/Dashboard';
-// import Navbar from './Components/Navbar';
+import Navbar from './Components/Navbar';
 // import KitchenChef from './Components/KitchenChef';
 // import EatofySetting from './Components/EatofySetting';
 // import Restaurant from './Components/Restaurant';
-import LoginPage from './Components/LoginPage';
+// import LoginPage from './Components/LoginPage';
+import InventoryManagement from './Components/InventoryManagement';
 
 
 
@@ -27,14 +28,15 @@ function App() {
 
   return (
     <div className="md:flex ">
-      {/* <Navbar showNavbar={showNavbar} toggleNavbar={toggleNavbar} /> */}
+      <Navbar showNavbar={showNavbar} toggleNavbar={toggleNavbar} />
       {/* <MenuDine menuShown={menuShown} togglemMenu={togglemMenu}/> */}
        {/* <Restaurant /> */}
     {/* <Dashboard /> */}
     {/* <BankOffice /> */}
     {/* <EatofySetting /> */}
     {/* <KitchenChef /> */}
-    <LoginPage />
+    {/* <LoginPage /> */}
+    <InventoryManagement />
     </div>
   );
 }

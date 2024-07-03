@@ -28,10 +28,9 @@ const Restaurant = () => {
 
     <div className="table-category mt-8 flex justify-end">
       <ul className='grid grid-cols-2 justify-center items-center gap-1 flex-wrap text-sm font-semibold'>
-        <li className='text-yellow-500'>Booked</li>
-        <li className='text-slate-400'>Merge Table</li>
+        <li className='text-red-500'>Booked</li>
+        <li className='text-gray-600'>Reservation</li>
         <li className='text-green-700'>Payment</li>
-        <li className='text-red-800'>Reservation</li>
       </ul>
     </div>
 
